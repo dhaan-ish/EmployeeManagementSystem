@@ -11,10 +11,10 @@ public class EmployeeCRUD {
         try (Connection connection = DriverManager.getConnection(JDBC_URL, USERNAME, PASSWORD)) {
             System.out.println("Connected to the database.");
 
-            // Create a sample employee table if not exists
+           
             createEmployeeTable(connection);
 
-            // Menu-driven CRUD operations
+           
             while (true) {
                 System.out.println("1. Add Employee");
                 System.out.println("2. Read Employee");
@@ -75,7 +75,7 @@ public class EmployeeCRUD {
             Scanner scanner = new Scanner(System.in);
             return scanner.nextInt();
         } catch (java.util.InputMismatchException e) {
-            return -1; // Return an invalid choice
+            return -1; 
         }
     }
 
@@ -157,7 +157,6 @@ public class EmployeeCRUD {
         System.out.print("Enter employee ID: ");
         int empId = scanner.nextInt();
 
-        // Check if the employee exists
         if (!employeeExists(connection, empId)) {
             System.out.println("Employee not found.");
             return;
@@ -182,7 +181,6 @@ public class EmployeeCRUD {
             return;
         }
 
-        // Get the column name based on the user's choice
         String columnName = getColumnName(choice);
 
         System.out.print("Enter new value for " + columnName + ": ");
@@ -244,7 +242,7 @@ public class EmployeeCRUD {
         System.out.print("Enter employee ID: ");
         int empId = scanner.nextInt();
     
-        // Check if the employee exists
+        
         if (!employeeExists(connection, empId)) {
             System.out.println("Employee not found.");
             return;
