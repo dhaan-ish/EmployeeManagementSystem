@@ -20,4 +20,4 @@ This is a mini project for the Java programming language, focusing on creating a
 
 1. **Clone the Repository:**
    ```bash
-   git clone https://github.com/your-username/EmployeeManagementSystem.git
+   git clone https://github.com/dhaan-ish/EmployeeManagementSystem.git
