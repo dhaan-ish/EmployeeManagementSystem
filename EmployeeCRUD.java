@@ -39,7 +39,7 @@ public class EmployeeCRUD {
                         break;
                     case 5:
 
-                        System.out.println("Exiting the program. Goodbye!");
+                        System.out.println("Varata Maamey...");
                         return;
                     default:
                         System.out.println("Invalid choice. Please enter a number between 1 and 5.");
